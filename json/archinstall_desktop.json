@@ -1,0 +1,15 @@
+{
+    "config_version": "2.5.6",
+    "debug": false,
+    "no_pkg_lookups": false,
+    "offline": false,
+    "packages": [
+        "neofetch"
+    ],
+    "script": "guided",
+    "silent": false,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "version": "2.5.6"
+}
+
