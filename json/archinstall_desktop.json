@@ -25,6 +25,8 @@
   "ntp": true,
   "offline": false,
   "packages": [
+    "adobe-source-han-sans-cn-fonts",
+    "adobe-source-han-serif-cn-fonts",
     "alsa-lib",
     "alsa-plugins",
     "archinstall",
@@ -105,6 +107,7 @@
     "neofetch",
     "nodejs",
     "noto-fonts",
+    "noto-fonts-cjk",
     "npm",
     "ntfs-3g",
     "nvidia-settings",
@@ -112,6 +115,7 @@
     "ocl-icd",
     "openal",
     "opencl-nvidia",
+    "otf-ipafont",
     "p7zip",
     "pavucontrol",
     "php",
@@ -151,7 +155,9 @@
     "vulkan-icd-loader",
     "vulkan-radeon",
     "wine-staging",
-    "winetricks"
+    "winetricks",
+    "wqy-microhei",
+    "wqy-zenhei"
   ],
   "script": "guided",
   "silent": false,
