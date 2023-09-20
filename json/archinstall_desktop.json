@@ -1,7 +1,7 @@
 {
   "additional-repositories": ["multilib"],
   "audio": "pipewire",
-  "bootloader": "systemd-bootctl",
+  "bootloader": "systemd-boot",
   "config_version": "2.5.6",
   "debug": false,
   "desktop-environment": "gnome",
