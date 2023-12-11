@@ -250,6 +250,7 @@
     "piper",
     "steam",
     "wine-staging",
+    "gnome-calculator",
     "winetricks"
   ],
   "parallel downloads": 0,

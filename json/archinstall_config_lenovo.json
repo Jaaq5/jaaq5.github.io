@@ -82,6 +82,7 @@
     "lightdm-gtk-greeter-settings",
     "linux-zen-headers", 
     "linux-lts-headers",
+    "gnome-calculator",
 //Paquetes cinnamon
     "xed",
     "xreader",    
