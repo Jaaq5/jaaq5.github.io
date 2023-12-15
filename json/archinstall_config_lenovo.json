@@ -83,6 +83,8 @@
     "linux-zen-headers", 
     "linux-lts-headers",
     "gnome-calculator",
+    "noto-fonts-cjk",
+    "telegram-desktop",
 //Paquetes cinnamon
     "xed",
     "xreader",    
@@ -126,6 +128,8 @@
     "steam",
     "wine-staging",
     "winetricks",
+    "goverlay",
+    "lib32-gamemode",
 
 //Paquetes lenovo
     
