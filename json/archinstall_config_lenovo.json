@@ -1,6 +1,4 @@
 //Paquetes esenciales
-    //"noto-fonts",
-    //"rsync",
     "archinstall",
     "dosfstools",
     "exfat-utils", 
