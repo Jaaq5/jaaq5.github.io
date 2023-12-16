@@ -1,273 +1,286 @@
 {
-  "additional-repositories": [
-      "multilib"
-  ],
+  "additional-repositories": ["multilib"],
   "archinstall-language": "English",
   "audio_config": {
-      "audio": "pipewire"
+    "audio": "pipewire"
   },
   "bootloader": "Systemd-boot",
   "config_version": "2.7.1",
   "debug": false,
   "disk_config": {
-      "config_type": "default_layout",
-      "device_modifications": [
+    "config_type": "default_layout",
+    "device_modifications": [
+      {
+        "device": "/dev/nvme0n1",
+        "partitions": [
           {
-              "device": "/dev/nvme0n1",
-              "partitions": [
-                  {
-                      "btrfs": [],
-                      "dev_path": null,
-                      "flags": [
-                          "Boot",
-                          "ESP"
-                      ],
-                      "fs_type": "fat32",
-                      "mount_options": [],
-                      "mountpoint": "/boot",
-                      "obj_id": "077a01c2-4d2b-4417-894e-209deea66910",
-                      "size": {
-                          "sector_size": {
-                              "unit": "B",
-                              "value": 512
-                          },
-                          "unit": "MiB",
-                          "value": 512
-                      },
-                      "start": {
-                          "sector_size": {
-                              "unit": "B",
-                              "value": 512
-                          },
-                          "unit": "MiB",
-                          "value": 1
-                      },
-                      "status": "create",
-                      "type": "primary"
-                  },
-                  {
-                      "btrfs": [
-                          {
-                              "compress": false,
-                              "mountpoint": "/",
-                              "name": "@",
-                              "nodatacow": false
-                          },
-                          {
-                              "compress": false,
-                              "mountpoint": "/home",
-                              "name": "@home",
-                              "nodatacow": false
-                          },
-                          {
-                              "compress": false,
-                              "mountpoint": "/var/log",
-                              "name": "@log",
-                              "nodatacow": false
-                          },
-                          {
-                              "compress": false,
-                              "mountpoint": "/var/cache/pacman/pkg",
-                              "name": "@pkg",
-                              "nodatacow": false
-                          },
-                          {
-                              "compress": false,
-                              "mountpoint": "/.snapshots",
-                              "name": "@.snapshots",
-                              "nodatacow": false
-                          }
-                      ],
-                      "dev_path": null,
-                      "flags": [],
-                      "fs_type": "btrfs",
-                      "mount_options": [
-                          "compress=zstd"
-                      ],
-                      "mountpoint": null,
-                      "obj_id": "de77aea2-9ca5-4850-898f-ae2925b0d2ac",
-                      "size": {
-                          "sector_size": {
-                              "unit": "B",
-                              "value": 512
-                          },
-                          "unit": "B",
-                          "value": 255521546240
-                      },
-                      "start": {
-                          "sector_size": {
-                              "unit": "B",
-                              "value": 512
-                          },
-                          "unit": "B",
-                          "value": 537919488
-                      },
-                      "status": "create",
-                      "type": "primary"
-                  }
-              ],
-              "wipe": true
+            "btrfs": [],
+            "dev_path": null,
+            "flags": ["Boot", "ESP"],
+            "fs_type": "fat32",
+            "mount_options": [],
+            "mountpoint": "/boot",
+            "obj_id": "077a01c2-4d2b-4417-894e-209deea66910",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "MiB",
+              "value": 512
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "MiB",
+              "value": 1
+            },
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "btrfs": [
+              {
+                "compress": false,
+                "mountpoint": "/",
+                "name": "@",
+                "nodatacow": false
+              },
+              {
+                "compress": false,
+                "mountpoint": "/home",
+                "name": "@home",
+                "nodatacow": false
+              },
+              {
+                "compress": false,
+                "mountpoint": "/var/log",
+                "name": "@log",
+                "nodatacow": false
+              },
+              {
+                "compress": false,
+                "mountpoint": "/var/cache/pacman/pkg",
+                "name": "@pkg",
+                "nodatacow": false
+              },
+              {
+                "compress": false,
+                "mountpoint": "/.snapshots",
+                "name": "@.snapshots",
+                "nodatacow": false
+              }
+            ],
+            "dev_path": null,
+            "flags": [],
+            "fs_type": "btrfs",
+            "mount_options": ["compress=zstd"],
+            "mountpoint": null,
+            "obj_id": "de77aea2-9ca5-4850-898f-ae2925b0d2ac",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 255521546240
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 537919488
+            },
+            "status": "create",
+            "type": "primary"
           }
-      ]
+        ],
+        "wipe": true
+      }
+    ]
   },
   "disk_encryption": {
-      "encryption_type": "luks",
-      "partitions": [
-          "de77aea2-9ca5-4850-898f-ae2925b0d2ac"
-      ]
+    "encryption_type": "luks",
+    "partitions": ["de77aea2-9ca5-4850-898f-ae2925b0d2ac"]
   },
   "hostname": "ga-a320m-s2h",
-  "kernels": [
-      "linux-lts",
-      "linux-zen"
-  ],
+  "kernels": ["linux-lts", "linux-zen"],
   "locale_config": {
-      "kb_layout": "us",
-      "sys_enc": "UTF-8",
-      "sys_lang": "es_CR.UTF-8"
+    "kb_layout": "us",
+    "sys_enc": "UTF-8",
+    "sys_lang": "es_CR.UTF-8"
   },
   "mirror_config": {
-      "custom_mirrors": [],
-      "mirror_regions": {
-          "Worldwide": [
-              "https://geo.mirror.pkgbuild.com/$repo/os/$arch"
-          ]
-      }
+    "custom_mirrors": [],
+    "mirror_regions": {
+      "Worldwide": ["https://geo.mirror.pkgbuild.com/$repo/os/$arch"]
+    }
   },
   "network_config": {
-      "type": "nm"
+    "type": "nm"
   },
   "no_pkg_lookups": false,
   "ntp": true,
   "offline": false,
   "packages": [
     "archinstall",
-    "dosfstools",
-    "exfat-utils", 
-    "f2fs-tools", 
-    "fatresize", 
-    "jfsutils", 
-    "nilfs-utils", 
-    "ntfs-3g", 
-    "reiserfsprogs", 
-    "udftools", 
-    "xfsprogs",
-    "libreoffice-fresh",
-    "vlc",
-    "thunderbird",
-    "firefox",
-    "neofetch",
-    "git",
-    "flatpak",
-    "go",
-    "timeshift",
-    "gufw",
-    "p7zip",
-    "unrar",
     "aria2",
-    "python-pip",
-    "tldr",
-    "ttf-jetbrains-mono", 
-    "ttf-jetbrains-mono-nerd", 
-    "ttf-hack-nerd", 
-    "ttf-nerd-fonts-symbols",
-    "ttf-nerd-fonts-symbols-mono", 
-    "ttf-liberation",
-    "kitty", 
-    "fish", 
-    "trash-cli", 
-    "ranger", 
-    "usbutils",
-    "shotwell",
-    "rhythmbox", 
-    "thefuck", 
-    "bat", 
-    "lsd",
-    "cups", 
+    "aspnet-runtime",
+    "bat",
+    "cups",
     "cups-pdf",
-    "hplip",
-    "man-pages",
-    "man-pages-es", 
-    "virtualbox",
-    "virtualbox-guest-iso",
-    "texlive-basic",
-    "texlive-latex",
-    "texlive-latexrecommended",
-    "texlive-latexextra",
-    "texstudio",
-    "electrum     ",
-    "gparted", 
-    "vokoscreen",
-    "obs-studio",
-    "guvcview        ",
-    "jdk-openjdk",
-    "nodejs",
-    "ruby", 
+    "dosfstools",
     "dotnet-runtime",
     "dotnet-sdk",
-    "aspnet-runtime",
-    "npm",
-    "php",
-    "reflector",
-    "rclone",
+    "electrum     ",
+    "exfat-utils",
+    "f2fs-tools",
+    "fatresize",
+    "firefox",
+    "fish",
+    "flatpak",
+    "git",
+    "gnome-calculator",
+    "go",
+    "gparted",
+    "gufw",
+    "guvcview        ",
+    "handbrake",
+    "hplip",
     "hunspell-en_us",
     "hunspell-es_cr",
+    "jdk-openjdk",
+    "jfsutils",
+    "kitty",
+    "libreoffice-fresh",
     "libreoffice-fresh-es",
-    "postgresql",
-    "mariadb", 
-    "otf-comicshanns-nerd",
-    "python-async-timeout",
-    "python-qdarkstyle",
-    "handbrake",
     "lightdm-gtk-greeter-settings",
-    "linux-zen-headers", 
     "linux-lts-headers",
-    "xed",
-    "xreader",    
-    "system-config-printer",
+    "linux-zen-headers",
+    "lsd",
+    "man-pages",
+    "man-pages-es",
+    "mariadb",
+    "neofetch",
+    "nilfs-utils",
+    "nodejs",
+    "noto-fonts-cjk",
+    "npm",
+    "ntfs-3g",
+    "obs-studio",
+    "otf-comicshanns-nerd",
+    "p7zip",
+    "php",
+    "postgresql",
+    "python-async-timeout",
+    "python-pip",
+    "python-qdarkstyle",
+    "ranger",
+    "rclone",
+    "reflector",
+    "reiserfsprogs",
+    "rhythmbox",
+    "ruby",
+    "shotwell",
+    "telegram-desktop",
+    "texlive-basic",
+    "texlive-latex",
+    "texlive-latexextra",
+    "texlive-latexrecommended",
+    "texstudio",
+    "thefuck",
+    "thunderbird",
+    "timeshift",
+    "tldr",
+    "trash-cli",
+    "ttf-hack-nerd",
+    "ttf-jetbrains-mono",
+    "ttf-jetbrains-mono-nerd",
+    "ttf-liberation",
+    "ttf-nerd-fonts-symbols",
+    "ttf-nerd-fonts-symbols-mono",
+    "udftools",
+    "unrar",
+    "usbutils",
+    "virtualbox",
+    "virtualbox-guest-iso",
+    "vlc",
+    "vokoscreen",
+    "xfsprogs",
     "blueberry",
     "cinnamon-translations",
-    "gnome-screenshot",
-    "gnome-disk-utility",
-    "seahorse",
-    "nemo-seahorse",
-    "gnome-online-accounts",
-    "simple-scan",
     "gitg",
-    "xdg-desktop-portal-gnome",
-    "gvfs-google",
+    "gnome-disk-utility",
+    "gnome-online-accounts",
+    "gnome-screenshot",
     "gvfs-goa",
-    "partitionmanager",
-    "spectacle",
-    "print-manager",
-    "kdeconnect",
-    "sshfs",
-    "kwalletmanager",
+    "gvfs-google",
+    "nemo-seahorse",
+    "seahorse",
+    "simple-scan",
+    "system-config-printer",
+    "xdg-desktop-portal-gnome",
+    "xed",
+    "xreader",
+    "blueberry",
+    "cinnamon-translations",
+    "gitg",
+    "gnome-disk-utility",
+    "gnome-online-accounts",
+    "gnome-screenshot",
+    "gvfs-goa",
+    "gvfs-google",
+    "nemo-seahorse",
+    "seahorse",
+    "simple-scan",
+    "system-config-printer",
+    "xdg-desktop-portal-gnome",
+    "xed",
+    "xreader",
     "gamemode",
+    "goverlay",
+    "lib32-gamemode",
+    "lib32-giflib",
+    "lib32-gnutls",
+    "lib32-gst-plugins-base-libs",
+    "lib32-gtk3",
+    "lib32-libjpeg-turbo",
+    "lib32-libpulse",
+    "lib32-libva",
+    "lib32-libxcomposite",
+    "lib32-libxinerama",
+    "lib32-libxslt",
+    "lib32-mpg123",
+    "lib32-nvidia-utils",
+    "lib32-ocl-icd",
+    "lib32-openal",
+    "lib32-opencl-nvidia",
+    "lib32-v4l-utils",
     "lutris",
     "mangohud",
     "nvidia-settings",
+    "opencl-nvidia",
     "piper",
     "steam",
     "wine-staging",
-    "gnome-calculator",
     "winetricks"
   ],
   "parallel downloads": 0,
   "profile_config": {
-      "gfx_driver": "Nvidia (proprietary)",
-      "greeter": "lightdm-gtk-greeter",
-      "profile": {
-          "custom_settings": {
-              "Cinnamon": {},
-              "Kde": {}
-          },
-          "details": [
-              "Cinnamon",
-              "Kde"
-          ],
-          "main": "Desktop"
-      }
+    "gfx_driver": "Nvidia (proprietary)",
+    "greeter": "lightdm-gtk-greeter",
+    "profile": {
+      "custom_settings": {
+        "Cinnamon": {},
+        "Kde": {}
+      },
+      "details": ["Cinnamon", "Kde"],
+      "main": "Desktop"
+    }
   },
   "script": "guided",
   "silent": false,

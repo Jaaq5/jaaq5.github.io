@@ -1,3 +1,3 @@
 # jaaq5.github.io
 
-Pagina web
+Pagina web con las configuraciones de archinstall
