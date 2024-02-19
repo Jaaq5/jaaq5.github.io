@@ -4,7 +4,6 @@
     "aspnet-runtime",
     "bat", 
     "chromium",
-    "code",
     "cups", 
     "cups-pdf",
     "dosfstools",
