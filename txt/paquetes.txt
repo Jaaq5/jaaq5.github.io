@@ -115,7 +115,7 @@
     "kamoso",
     "kcalc",
     "kdeconnect",
-    "kgpg",
+    "kleopatra",
     "kommit",
     "kwalletmanager",
     "okular",
