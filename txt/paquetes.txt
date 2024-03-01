@@ -146,6 +146,7 @@
     "skanlite",
     "spectacle",
     "sshfs",
+    "umbrello",
 
 //Paquetes escritorio/////////////////////////////////
     "gamemode",
