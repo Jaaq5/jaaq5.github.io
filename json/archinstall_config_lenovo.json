@@ -187,6 +187,7 @@
     "obs-studio",
     "p7zip",
     "php",
+    "pnpm",
     "postgresql",
     "pycharm-community-edition",
     "python-async-timeout",
