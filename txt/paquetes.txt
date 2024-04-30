@@ -39,6 +39,7 @@
     "hunspell-es_cr",
     "inetutils",
     "intellij-idea-community-edition",
+    "isoimagewriter",
     "jdk-openjdk",
     "jfsutils", 
     "kitty", 
