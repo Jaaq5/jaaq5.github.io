@@ -14,7 +14,6 @@
     "cups-pdf",
     "dbeaver",
     "deja-dup",
-    "discord",
     "dosfstools",
     "dotnet-runtime",
     "dotnet-sdk",
